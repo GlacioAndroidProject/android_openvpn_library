@@ -58,7 +58,7 @@ public class OboloiVPN extends Activity {
         OboloiVPN.profileIntent = VpnService.prepare(activity);
         OboloiVPN.user = user;
         OboloiVPN.pass = pass;
-        if(profileIntent != null) {
+        if(OboloiVPN.ovpnFileContent != null) {
             activity.startActivityForResult(OboloiVPN.profileIntent, 1);
             return;
         }
